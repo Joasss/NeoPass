@@ -78,3 +78,16 @@ a {
     --password-background: rgb(240, 240, 240);
     --password-border: rgba(53, 53, 53, 0.486);
 }
+
+.theme-dark {
+    --cics: 'light';
+    --background-color: whitesmoke;
+    --text-color: black;
+    --title-bar-background: rgb(226, 226, 226);
+    --title-bar-border: black;
+    --button-background: white;
+    --button-border: #000000c5;
+    --button-shadow: #00000016;
+    --password-background: rgb(240, 240, 240);
+    --password-border: rgba(53, 53, 53, 0.486);
+}
