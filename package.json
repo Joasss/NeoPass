@@ -4,14 +4,51 @@
   "description": "An electron password generator made by Joa_sss",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder build --win --publish never"
+    "start": "electron-forge start",
+    "release": "electron-builder --win",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "Joa_sss",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^19.0.0",
-    "electron-builder": "^23.3.3",
-    "electron-packager": "^15.5.1"
+    "@electron-forge/cli": "^6.0.0-beta.65",
+    "@electron-forge/maker-deb": "^6.0.0-beta.65",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.65",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.65",
+    "@electron-forge/maker-zip": "^6.0.0-beta.65",
+    "electron": "^19.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "electron_password_generator"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
