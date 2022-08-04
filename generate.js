@@ -6,7 +6,7 @@ const capitalCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbersCharacters = "01234567890123456789";
 const symbolsCharacters = "!@#$%^&*!@#$%^&*!@#$%^&*";
 
-function getPassword (form) {
+function getPassword(form) {
 
     // Get the values from the form.
     let amount = form.amountCharacters.value;
@@ -23,7 +23,7 @@ function getPassword (form) {
     if (capitalLetters) charSet = charSet + capitalCharacters;
     if (numbers) charSet = charSet + numbersCharacters;
     if (symbols) charSet = charSet + symbolsCharacters;
-    
+
     let password = "";
 
     // Generate the password.
@@ -39,7 +39,6 @@ function getPassword (form) {
 
 function loadTheme() {
     let theme = window.localStorage.getItem('theme');
-    if (theme !== 'dark' && theme !== 'light') {window.localStorage.setItem('theme', 'light');}
     if (theme === 'dark' || theme === 'light') {
         document.body.classList.remove('theme-dark', 'theme-light');
         document.body.classList.add(`theme-${theme}`);
@@ -50,5 +49,7 @@ function toggleTheme() {
     const currentTheme = window.localStorage.getItem("theme");
     if (!currentTheme) { window.localStorage.setItem('theme', "dark"); loadTheme() }
     if (currentTheme === "light") { window.localStorage.setItem('theme', "dark"); loadTheme() }
-    if (currentTheme === "dark") { window.localStorage.setItem('theme', "light"); loadTheme() }
+    if (currentTheme === "dark") {
+        window.localStorage.setItem('theme', "light"); loadTheme()
+    } else { window.localStorage.setItem('theme', 'light'); }
 }
