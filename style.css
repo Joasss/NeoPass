@@ -101,5 +101,8 @@ a {
 .theme {
     cursor: pointer;
     width: fit-content;
-    margin-left: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    font-size: larger;
 }
