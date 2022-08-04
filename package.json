@@ -1,0 +1,14 @@
+{
+  "name": "electron-password-generator",
+  "version": "1.0.0",
+  "description": "An electron password generator made by Joa_sss",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Joa_sss",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^19.0.0"
+  }
+}

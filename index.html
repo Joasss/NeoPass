@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="generate.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div class="title-bar">
+        <h2>Password Generator</h2>
+        <h5>Made by Joa_sss</h5>
+    </div>
+    <form name="generator">
+
+        <div class="box">
+
+            <div>
+                <h4>Amount of Characters</h4>
+                <input class="number-box" type="number" min="2" max="100" name="amountCharacters" value="12">
+            </div>
+
+            <div>
+                <h4>Capital Letters (ABC)?</h4>
+                <input type="checkbox" name="capitalLetters" checked=true>
+            </div>
+
+            <div>
+                <h4>Include Numbers (123)?</h4>
+                <input type="checkbox" name="numbers" checked=true>
+            </div>
+
+            <div>
+                <h4>Include Symbols ($&@)?</h4>
+                <input type="checkbox" name="symbols">
+            </div>
+
+        </div>
+
+        <input class="button" type="button" name="button" Value="Generate Password" onClick="getPassword(this.form)">
+    </form>
+
+
+    <div class="output">
+        <b>Password:</b>
+        <p class="password" id="password">Click the button to generate a password!</p>
+    </div>
+
+
+</body>
+
+</html>
