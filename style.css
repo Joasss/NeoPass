@@ -29,6 +29,10 @@ a {
 .number-box {
     padding: 5px;
     width: 100px;
+    background-color: var(--input-background);
+    border-radius: 5px;
+    border: 1px solid var(--input-color);
+    color: var(--input-color);
 }
 
 .button {
@@ -67,7 +71,6 @@ a {
 }
 
 .theme-light {
-    --cics: 'light';
     --background-color: whitesmoke;
     --text-color: black;
     --title-bar-background: rgb(226, 226, 226);
@@ -75,19 +78,28 @@ a {
     --button-background: white;
     --button-border: #000000c5;
     --button-shadow: #00000016;
+    --input-background: white;
+    --input-color: black;
     --password-background: rgb(240, 240, 240);
     --password-border: rgba(53, 53, 53, 0.486);
 }
 
 .theme-dark {
-    --cics: 'light';
-    --background-color: whitesmoke;
-    --text-color: black;
-    --title-bar-background: rgb(226, 226, 226);
-    --title-bar-border: black;
-    --button-background: white;
-    --button-border: #000000c5;
-    --button-shadow: #00000016;
-    --password-background: rgb(240, 240, 240);
-    --password-border: rgba(53, 53, 53, 0.486);
+    --background-color: rgb(29, 28, 28);
+    --text-color: white;
+    --title-bar-background: rgb(44, 44, 44);
+    --title-bar-border: white;
+    --button-background: rgb(41, 41, 41);
+    --button-border: #fcfcfcc5;
+    --button-shadow: #ffffff16;
+    --input-background: black;
+    --input-color: white;
+    --password-background: rgb(41, 40, 40);
+    --password-border: rgba(255, 255, 255, 0.486);
+}
+
+.theme {
+    cursor: pointer;
+    width: fit-content;
+    margin-left: 20px;
 }
