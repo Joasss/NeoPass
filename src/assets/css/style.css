@@ -4,12 +4,14 @@ html, body {
     color: var(--text-color);
     height: 100%;
     font-family: 'Lato';
+    transition: 0.4s;
 }
 
 .title-bar {
     background-color: var(--title-bar-background);
     padding: 5px 10px;
     align-items: center;
+    transition: 0.4s;
     justify-content: space-between;
     height: 50px;
     display: flex;
@@ -29,6 +31,7 @@ a {
 .number-box {
     padding: 5px;
     width: 100px;
+    transition: 0.4s;
     background-color: var(--input-background);
     border-radius: 5px;
     border: 1px solid var(--input-color);
@@ -41,6 +44,7 @@ a {
     border-radius: 5px;
     background-color: var(--button-background);
     border: 1px solid var(--button-border);
+    transition: 0.4s;
     color: var(--text-color);
     font-size: 15px;
     display: block;
@@ -65,6 +69,7 @@ a {
     padding: 6px 10px;
     font-size: 15px;
     border: 1px solid var(--password-border);
+    transition: 0.4s;
     color: var(--text-color);
     border-radius: 3px;
     background-color: var(--password-background);
