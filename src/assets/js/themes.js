@@ -1,4 +1,5 @@
 function loadTheme() {
+    getDefaultPassword();
     let theme = window.localStorage.getItem('theme');
     if (theme === 'dark' || theme === 'light') {
         document.body.classList.remove('theme-dark', 'theme-light');

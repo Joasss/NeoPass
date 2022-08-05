@@ -5,6 +5,7 @@
     <script src="./assets/js/generate.js"></script>
     <script src="./assets/js/copy.js"></script>
     <script src="./assets/js/themes.js"></script>
+    <script src="./assets/js/presets.js"></script>
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -19,19 +20,89 @@
         <h2>Generate a secure password</h2>
         <p>Instantly generate a secure and random password.</p>
 
-        <div class="password">
-            <h3>Password</h3>
+        <div class="password" id="passwordBox">
+            <h2 id="password">Password</h2>
             <div class="icons">
                 <i class="fa-solid fa-copy"></i>
                 <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
         </div>
 
-        <div class="config">
-            configure
-        </div>
+        <form name="generator">
+            <div class="config">
+                <h2 style="text-align: left; margin-bottom: 40px;">Configure your password</h2>
+                <div class="config-wrapper">
+
+                    <div class="slider-box">
+                        <b>Password Length</b>
+                        <div class="slider">
+                            <p id="characterAmountDisplay">Amount</p>
+                            <input id="characterAmount" name="characterAmount" type="range" min="1" max="50" value="15">
+                        </div>
+                    </div>
+
+                    <div class="presets">
+
+                        <div class="checkbox" onclick="setEasyToSay()" style="margin-top: 0px;">
+                            <input type="radio" name="name" id="easySay">
+                            <h4>Easy to say</h4>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="radio" onclick="setEasyRemember()" name="name" id="easyRemember">
+                            <h4>Easy to remember</h4>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="radio" name="name" onclick="setMostSecure()" id="mostSecure" checked>
+                            <h4>Most secure</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="checkboxes">
+
+                        <div class="checkbox" style="margin-top: 0px;">
+                            <input type="checkbox" name="smallLetters" id="smallLetters" checked>
+                            <h4>Lowercase</h4>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="capitalLetters" id="capitalLetters" checked>
+                            <h4>Upercase</h4>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="numbers" id="numbers" checked>
+                            <h4>Numbers</h4>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="symbols" id="symbols" checked>
+                            <h4>Symbols</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="center-button">
+                    <button class="button" type="button" onClick="getPassword(this.form)" name="button">Generate</button>
+                </div>
+            </div>
+        </form>
     </div>
 
 </body>
+
+<script>
+    const slider = document.getElementById("characterAmount");
+    const output = document.getElementById("characterAmountDisplay");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+        output.innerHTML = this.value;
+    }
+</script>
 
 </html>
