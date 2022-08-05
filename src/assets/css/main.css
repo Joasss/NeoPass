@@ -122,3 +122,13 @@ h4 {
     left: 20px;
     font-size: larger;
 }
+
+.credit {
+    cursor: pointer;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    color: var(--theme-button);
+    right: 20px;
+    font-size: larger;
+}

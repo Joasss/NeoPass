@@ -10,7 +10,7 @@ const createWindow = () => {
         webPreferences: {
           nodeIntegration: true
         },
-        title: "Password Generator",
+        title: "NeoPass - Secure password generator.",
         autoHideMenuBar: true,
     });
 

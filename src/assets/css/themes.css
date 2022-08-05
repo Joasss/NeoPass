@@ -5,7 +5,7 @@
     --config-background: white;
     --button-text: white;
     --main-color: black;
-    --main-background: white;
+    --main-background: rgb(255, 255, 255);
     --button-background: rgb(41, 126, 196);
     --button-low: rgb(34, 108, 168);
     --icon-hover: rgb(17, 81, 134);

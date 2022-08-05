@@ -94,7 +94,7 @@ function getPasswordStrength(password) {
             break;
 
         case 4:
-            setPasswordStrengthColor("green");
+            setPasswordStrengthColor("rgb(0, 190, 48)");
             break;
     }
 }
