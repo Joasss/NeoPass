@@ -1,0 +1,27 @@
+.theme-light {
+    --background-color: #234977;
+    --text-color: black;
+    --password-background: white;
+    --config-background: white;
+    --button-text: white;
+    --main-color: black;
+    --main-background: white;
+    --button-background: rgb(41, 126, 196);
+    --button-low: rgb(34, 108, 168);
+    --icon-hover: rgb(17, 81, 134);
+    --theme-button: white;
+}
+
+.theme-dark {
+    --background-color: #2c2c2c;
+    --text-color: white;
+    --password-background: #1d1b1b;
+    --config-background: #1d1b1b;
+    --button-text: white;
+    --main-color: white;
+    --main-background: #1d1b1b;
+    --button-background: rgb(41, 126, 196);
+    --button-low: rgb(34, 108, 168);
+    --icon-hover: rgb(49, 139, 212);
+    --theme-button: white;
+}

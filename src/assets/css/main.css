@@ -1,25 +1,39 @@
+html, body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Lato';
+    transition: 0.4s;
+}
+
 .password {
-    background-color: white;
+    background-color: var(--password-background);
     width: 60%;
     align-content: center;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
     display: flex;
     padding: 20px 30px;
-    border-radius: 5px;
-    border-bottom: 8px solid white;
+    border-radius: 8px;
+    border-bottom: 8px solid var(--password-background);
 }
 
-h1, h2, h3, h4 { margin: 0; }
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
 
 .config {
-    background-color: white;
+    background-color: var(--config-background);
     width: 60%;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .style {
@@ -47,30 +61,64 @@ h1, h2, h3, h4 { margin: 0; }
 }
 
 .button {
-    color: white;
+    color: var(--button-text);
     font-size: 20px;
-    background-color: rgb(41, 126, 196);
-    --bs-clr: rgb(34, 108, 168);
+    background-color: var(--button-background);
+    --bs-clr: var(--button-low);
     box-shadow: 0px 5px 0px var(--bs-clr);
     border: none;
     padding: 10px 20px;
-    margin-left: 5px; margin-right: 5px;
-    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.2s;
-  }
-  .button:hover {
+}
+
+.button:hover {
     transform: translateY(2px);
     box-shadow: 0px 3px 0px var(--bs-clr);
-  }
-  .button:active {
+}
+
+.button:active {
     transform: translateY(5px);
     box-shadow: none;
-  }
+}
 
-  .center-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  }
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.icons {
+    font-size: larger;
+}
+
+.icon:hover {
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+
+.main {
+    margin: 25px 0px 50px;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--main-background);
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.theme {
+    cursor: pointer;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    color: var(--theme-button);
+    left: 20px;
+    font-size: larger;
+}
