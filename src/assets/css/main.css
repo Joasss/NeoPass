@@ -1,0 +1,29 @@
+.main {
+    text-align: center;
+}
+
+.password {
+    background-color: white;
+    width: 60%;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4 { margin: 0; }
+
+.config {
+    background-color: white;
+    width: 60%;
+    align-content: center;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 40px 20px;
+    border-radius: 10px;
+}

@@ -5,54 +5,32 @@
     <script src="./assets/js/generate.js"></script>
     <script src="./assets/js/copy.js"></script>
     <script src="./assets/js/themes.js"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <script src="https://kit.fontawesome.com/d5db5a9cd6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
 </head>
 
 <body onload="loadTheme()">
-    <div class="title-bar">
-        <h2>Password Generator</h2>
-        <h5>Made by Joa_sss</h5>
-    </div>
-    <form name="generator">
 
-        <div class="box">
+    <div class="main">
+        <h2>Generate a secure password</h2>
+        <p>Instantly generate a secure and random password.</p>
 
-            <div>
-                <h4>Amount of Characters</h4>
-                <input class="number-box" type="number" min="2" max="100" name="amountCharacters" value="12">
+        <div class="password">
+            <h3>Password</h3>
+            <div class="icons">
+                <i class="fa-solid fa-copy"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
-
-            <div>
-                <h4>Capital Letters (ABC)?</h4>
-                <input type="checkbox" name="capitalLetters" checked=true>
-            </div>
-
-            <div>
-                <h4>Include Numbers (123)?</h4>
-                <input type="checkbox" name="numbers" checked=true>
-            </div>
-
-            <div>
-                <h4>Include Symbols ($&@)?</h4>
-                <input type="checkbox" name="symbols">
-            </div>
-
         </div>
 
-        <input class="button" type="button" name="button" Value="Generate Password" onClick="getPassword(this.form)">
-    </form>
-
-
-    <div class="output">
-        <b>Password:</b>
-        <p onclick="copy()" class="password" id="password">Click the button to generate a password!</p>
+        <div class="config">
+            configure
+        </div>
     </div>
-
-    <p class="theme" onclick="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i></p>
-
 
 </body>
 
