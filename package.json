@@ -1,5 +1,5 @@
 {
-  "name": "electron-password-generator",
+  "name": "NeoPass",
   "version": "1.0.1",
   "description": "An electron password generator made by Joa_sss",
   "main": "src/main.js",
