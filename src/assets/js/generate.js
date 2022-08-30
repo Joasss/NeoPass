@@ -42,8 +42,6 @@ function getPassword(form) {
 
 function getDefaultPassword() {
 
-    console.log("getdefualt")
-
     const charSet = lowerCharacters + capitalCharacters + numbersCharacters + symbolsCharacters;
 
     let password = "";
@@ -71,7 +69,7 @@ function getPasswordStrength(password) {
     if (password.match(/[0-9]+/)) {
         strength += 1;
     }
-    if (password.match(/[$@#&!]+/)) {
+    if (password.match(/[$@#&!%*^]+/)) {
         strength += 1;
 
     }

@@ -4,8 +4,9 @@ function loadTheme() {
     if (theme === 'dark' || theme === 'light') {
         document.body.classList.remove('theme-dark', 'theme-light');
         document.body.classList.add(`theme-${theme}`);
-    } else {
-        window.localStorage.setItem('theme', 'light');
+    }
+    if (!theme) {
+        document.body.classList.add(`theme-light`);
     }
 }
 
