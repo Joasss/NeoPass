@@ -132,3 +132,11 @@ h4 {
     right: 20px;
     font-size: larger;
 }
+
+.generate {
+    display: none;
+}
+
+.checker {
+    display: none;
+}
