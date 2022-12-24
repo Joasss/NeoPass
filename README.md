@@ -1,6 +1,6 @@
 # Neopass
 
-> We recommend you to download NeoPass via [Withered Launcher](https://withered.app), a game/app launcher that will auto-update NeoPass when an update releases.
+> We will no longer support downloading NeoPass with Withered Launcher due to security concerns. (Leaking passwords)
 
 Generate Passwords!
 
